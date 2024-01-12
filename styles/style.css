@@ -8,12 +8,13 @@
 .btn-primary {
     border-radius: 8px;
     background: #FF900E;
-    padding: 1rem;
+    padding: 1.25rem;
     border: 0;
     color: #FFF;
     text-align: center;
     font-size: 1.10rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* Header Style */
@@ -76,4 +77,26 @@ nav a {
 .banner-image {
     width: 100%;
     margin-top: 2rem;
+}
+
+
+/* Media Query for responsive */
+/* Small device or mobile device */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column-reverse
+    }
+}
+
+/* For Medium device or Tablet */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column-reverse;
+    }
 }
